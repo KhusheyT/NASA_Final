@@ -24,7 +24,7 @@ countries = []
 
 # get fire data from NASA
 def fetch_fire_data():
-    url="https://firms.modaps.eosdis.nasa.gov/api/area/csv/c4f9c87a128b458b6a69d96cfc2e3e60/VIIRS_SNPP_NRT/world/1/2023-10-08"
+    url="https://firms.modaps.eosdis.nasa.gov/api/area/csv/c4f9c87a128b458b6a69d96cfc2e3e60/VIIRS_SNPP_NRT/world/1/2023-10-08"     # you can add relevant map keys.
     response = requests.get(url)
 
     if response.status_code == 200:
